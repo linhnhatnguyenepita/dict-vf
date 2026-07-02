@@ -7,6 +7,7 @@
 */
 
 :root {
+  color-scheme: light;
   --background: #f2efe6; /* warm paper */
   --foreground: #211e18; /* warm ink */
   --raised: #faf8f2; /* a lifted sheet, for entry panels */
@@ -39,23 +40,6 @@
   --font-mono: var(--font-jetbrains);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #17150f;
-    --foreground: #ece7d8;
-    --raised: #211e16;
-    --inset: #1c1a13;
-    --line: #36322a;
-    --line-strong: #4b4638;
-    --muted: #a49d88;
-    --faint: #837c69;
-    --accent: #9db2df;
-    --accent-tint: rgba(157, 178, 223, 0.12);
-    --on-ink: #ece7d8;
-    --on-ink-muted: #a49d88;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -73,13 +57,6 @@ body {
   opacity: 0.4;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E");
-}
-
-@media (prefers-color-scheme: dark) {
-  .grain {
-    mix-blend-mode: screen;
-    opacity: 0.5;
-  }
 }
 
 ::selection {
