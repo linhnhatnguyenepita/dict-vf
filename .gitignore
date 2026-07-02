@@ -12,6 +12,10 @@
 
 # testing
 /coverage
+/.superpowers/
+
+# codegraph (local daemon artifacts: db, unix socket, pid, log)
+/.codegraph/
 
 # next.js
 /.next/
